@@ -66,8 +66,10 @@ body {
     padding: 0;
     align-items: center;
     background-color: transparent;
-    max-width: 300px;
+    /* max-width: 300px; */
     border: none;
+    border-radius: 8px;
+    padding: 10px;
 }
 
 @media screen and (max-width: 640px) {
@@ -99,4 +101,54 @@ body {
 
 .card-title {
     font-size: 16px;
+    max-width: 300px;
+}
+
+.ctr-1,
+.ctr-2 {
+    font-size: 18px;
+    margin-top: 5px;
+    display: none;
+    gap: 5px;
+}
+
+.views-1,
+.views-2 {
+    display: none;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    font-size: 18px;
+    height: 40px;
+    width: 142px;
+    color: white;
+    gap: 5px;
+}
+
+.correct-thumb .view {
+    background-color: #16a34a;
+}
+
+.wrong-thumb .view {
+    background-color: #ef4444;
+}
+
+.correct-thumb {
+    background-color: #86efac;
+}
+
+.wrong-thumb {
+    background-color: #fca5a5;
+}
+
+.correct-thumb .views-1,
+.correct-thumb .views-2,
+.wrong-thumb .views-1,
+.wrong-thumb .views-2,
+.correct-thumb .ctr-1,
+.correct-thumb .views-2,
+.wrong-thumb .ctr-1,
+.wrong-thumb .ctr-2 {
+    display: flex;
 }
