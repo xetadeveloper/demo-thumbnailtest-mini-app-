@@ -72,13 +72,6 @@ body {
     padding: 10px;
 }
 
-@media screen and (max-width: 640px) {
-    .card-1,
-    .card-2 {
-        max-width: 240px;
-    }
-}
-
 #thumbnail-1,
 #thumbnail-2 {
     width: 300px;
@@ -102,6 +95,13 @@ body {
 .card-title {
     font-size: 16px;
     max-width: 300px;
+}
+
+@media screen and (max-width: 640px) {
+    .card-title {
+        font-size: 16px;
+        max-width: 240px;
+    }
 }
 
 .ctr-1,
@@ -147,7 +147,7 @@ body {
 .wrong-thumb .views-1,
 .wrong-thumb .views-2,
 .correct-thumb .ctr-1,
-.correct-thumb .views-2,
+.correct-thumb .ctr-2,
 .wrong-thumb .ctr-1,
 .wrong-thumb .ctr-2 {
     display: flex;

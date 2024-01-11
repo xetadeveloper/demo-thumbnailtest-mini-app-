@@ -67,7 +67,7 @@ function handleThumbnailClick(index) {
     } else {
         setTimeout(() => {
             incrementTest();
-        }, 1000);
+        }, 3000);
     }
 }
 
@@ -115,9 +115,11 @@ function completeTest() {
 
     if (score === tests.length) {
         // show success popup
-        // window.parent.postMessage('test-success', '*');
+        console.log('Sending success message');
+        window.parent.postMessage('test-success', '*');
     } else {
         // show fail popup
-        // window.parent.postMessage('test-fail', '*');
+        console.log('Sending fail message');
+        window.parent.postMessage('test-fail', '*');
     }
 }
