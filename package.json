@@ -1,0 +1,11 @@
+{
+  "name": "thumbnailtest-mini-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:chgroup-engineering/thumbnailtest-mini-app.git",
+  "author": "xetadeveloper <jazelogin@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "Bundle files"
+  }
+}
