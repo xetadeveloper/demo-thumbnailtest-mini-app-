@@ -1,3 +1,9 @@
+// Thumbnails
+import thumb1Image from '../assets/images/thumb-1.png';
+import thumb2Image from '../assets/images/thumb-2.png';
+import thumb3Image from '../assets/images/thumb-3.png';
+import thumb4Image from '../assets/images/thumb-4.png';
+
 const appState = {
     score: 0,
     currentTest: 0,
@@ -7,16 +13,16 @@ const appState = {
         {
             title: 'I added One Piece bosses to Minecraft for REVENGE',
             thumbs: [
-                { src: 'assets/images/thumb-1.png', ctr: '7.81%', views: '25,572' },
-                { src: 'assets/images/thumb-2.png', ctr: '4.88%', views: '15,634' },
+                { src: thumb1Image, ctr: '7.81%', views: '25,572' },
+                { src: thumb2Image, ctr: '4.88%', views: '15,634' },
             ],
             correctIndex: 0,
         },
         {
             title: '1v1ing EVERY Rank In Rainbow Six Siege',
             thumbs: [
-                { src: 'assets/images/thumb-3.png', ctr: '4.02%', views: '13,352' },
-                { src: 'assets/images/thumb-4.png', ctr: '4.42%', views: '22,850' },
+                { src: thumb3Image, ctr: '4.02%', views: '13,352' },
+                { src: thumb4Image, ctr: '4.42%', views: '22,850' },
             ],
             correctIndex: 1,
         },
@@ -43,6 +49,7 @@ thumb2.addEventListener('click', () => {
     handleThumbnailClick(1);
 });
 
+// Initialize values
 incrementTest(true);
 
 function handleThumbnailClick(index) {
